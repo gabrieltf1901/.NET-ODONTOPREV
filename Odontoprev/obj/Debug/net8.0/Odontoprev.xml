@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Odontoprev</name>
+    </assembly>
+    <members>
+        <member name="M:Odontoprev.Controllers.ConsultaController.GetAll">
+            <summary>
+            Retorna todas as consultas.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ConsultaController.GetById(System.Int32)">
+            <summary>
+            Retorna uma consulta pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ConsultaController.Create(Odontoprev.Models.Entities.Consulta)">
+            <summary>
+            Cria uma nova consulta.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ConsultaController.Update(System.Int32,Odontoprev.Models.Entities.Consulta)">
+            <summary>
+            Atualiza uma consulta existente.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ConsultaController.Delete(System.Int32)">
+            <summary>
+            Remove uma consulta pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.FaturamentoController.GetAll">
+            <summary>
+            Retorna todos os registros de faturamento.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.FaturamentoController.GetById(System.Int32)">
+            <summary>
+            Retorna um registro de faturamento pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.FaturamentoController.Create(Odontoprev.Models.Entities.Faturamento)">
+            <summary>
+            Cria um novo registro de faturamento.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.FaturamentoController.Update(System.Int32,Odontoprev.Models.Entities.Faturamento)">
+            <summary>
+            Atualiza um registro de faturamento existente.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.FaturamentoController.Delete(System.Int32)">
+            <summary>
+            Remove um registro de faturamento pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.PacienteController.GetAll">
+            <summary>
+            Retorna todos os pacientes.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.PacienteController.GetById(System.Int32)">
+            <summary>
+            Retorna um paciente pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.PacienteController.Create(Odontoprev.Models.Entities.Paciente)">
+            <summary>
+            Cria um novo paciente.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.PacienteController.Update(System.Int32,Odontoprev.Models.Entities.Paciente)">
+            <summary>
+            Atualiza um paciente existente.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.PacienteController.Delete(System.Int32)">
+            <summary>
+            Remove um paciente pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProcedimentoController.GetAll">
+            <summary>
+            Retorna todos os procedimentos.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProcedimentoController.GetById(System.Int32)">
+            <summary>
+            Retorna um procedimento pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProcedimentoController.Create(Odontoprev.Models.Entities.Procedimento)">
+            <summary>
+            Cria um novo procedimento.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProcedimentoController.Update(System.Int32,Odontoprev.Models.Entities.Procedimento)">
+            <summary>
+            Atualiza um procedimento existente.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProcedimentoController.Delete(System.Int32)">
+            <summary>
+            Remove um procedimento pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProfissionalController.GetAll">
+            <summary>
+            Retorna todos os profissionais.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProfissionalController.GetById(System.Int32)">
+            <summary>
+            Retorna um profissional pelo ID.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProfissionalController.Create(Odontoprev.Models.Entities.Profissional)">
+            <summary>
+            Cria um novo profissional.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProfissionalController.Update(System.Int32,Odontoprev.Models.Entities.Profissional)">
+            <summary>
+            Atualiza um profissional existente.
+            </summary>
+        </member>
+        <member name="M:Odontoprev.Controllers.ProfissionalController.Delete(System.Int32)">
+            <summary>
+            Remove um profissional pelo ID.
+            </summary>
+        </member>
+        <member name="T:Odontoprev.Models.Entities.Consulta">
+            <summary>
+            Representa uma consulta realizada.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Consulta.Id">
+            <summary>
+            Identificador único da consulta.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Consulta.DataHoraConsulta">
+            <summary>
+            Data e hora em que a consulta foi realizada.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Consulta.TipoProcedimento">
+            <summary>
+            Tipo de procedimento realizado na consulta.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Consulta.ValorConsulta">
+            <summary>
+            Valor da consulta.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Consulta.Status">
+            <summary>
+            Status da consulta (ex: Concluída, Agendada, Cancelada).
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Consulta.ProfissionalOpId">
+            <summary>
+            Identificador do profissional responsável pela consulta.
+            </summary>
+        </member>
+        <member name="T:Odontoprev.Models.Entities.Faturamento">
+            <summary>
+            Representa um registro de faturamento.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Faturamento.Id">
+            <summary>
+            Identificador único do faturamento.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Faturamento.DataEmissao">
+            <summary>
+            Data de emissão do faturamento.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Faturamento.ValorTotal">
+            <summary>
+            Valor total faturado.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Faturamento.Status">
+            <summary>
+            Status do faturamento (ex: Pago, Pendente).
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Faturamento.ProcedimentoOpId">
+            <summary>
+            Identificador do procedimento associado ao faturamento.
+            </summary>
+        </member>
+        <member name="T:Odontoprev.Models.Entities.Paciente">
+            <summary>
+            Representa um paciente.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Paciente.Id">
+            <summary>
+            Identificador único do paciente.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Paciente.NomeCompleto">
+            <summary>
+            Nome completo do paciente.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Paciente.DataNascimento">
+            <summary>
+            Data de nascimento do paciente.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Paciente.Contato">
+            <summary>
+            Contato (telefone, email, etc.) do paciente.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Paciente.PlanoDeSaude">
+            <summary>
+            Plano de saúde do paciente.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Paciente.HistoricoMedico">
+            <summary>
+            Histórico médico do paciente.
+            </summary>
+        </member>
+        <member name="T:Odontoprev.Models.Entities.Procedimento">
+            <summary>
+            Representa um procedimento odontológico.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Procedimento.Id">
+            <summary>
+            Identificador único do procedimento.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Procedimento.Descricao">
+            <summary>
+            Descrição do procedimento.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Procedimento.PrecoUnitario">
+            <summary>
+            Preço unitário do procedimento.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Procedimento.Categoria">
+            <summary>
+            Categoria do procedimento (ex: Rotina, Urgente).
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Procedimento.ConsultaOpId">
+            <summary>
+            Identificador da consulta associada ao procedimento.
+            </summary>
+        </member>
+        <member name="T:Odontoprev.Models.Entities.Profissional">
+            <summary>
+            Representa um profissional de odontologia.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Profissional.Id">
+            <summary>
+            Identificador único do profissional.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Profissional.Crm">
+            <summary>
+            Registro CRM do profissional.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Profissional.NomeCompleto">
+            <summary>
+            Nome completo do profissional.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Profissional.EspecialidadeOdontologica">
+            <summary>
+            Especialidade odontológica do profissional.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Profissional.Contato">
+            <summary>
+            Contato do profissional.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Profissional.HorarioDeConsulta">
+            <summary>
+            Horário de consulta do profissional.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Profissional.AvaliacaoQualidadeServico">
+            <summary>
+            Avaliação de qualidade do serviço prestado.
+            </summary>
+        </member>
+        <member name="P:Odontoprev.Models.Entities.Profissional.PacienteOpId">
+            <summary>
+            Identificador do paciente associado (caso exista relacionamento direto).
+            </summary>
+        </member>
+        <member name="T:Odontoprev.Singleton.ConfigManager">
+            <summary>
+            Implementação do padrão Singleton para gerenciar configurações globais da aplicação.
+            </summary>
+        </member>
+    </members>
+</doc>

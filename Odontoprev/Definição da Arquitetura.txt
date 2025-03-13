@@ -1,0 +1,22 @@
+﻿Arquitetura e Justificativa
+
+Escolha da Abordagem: Monolítica vs. Microservices
+Abordagem Monolítica (Escolha para este projeto):
+
+Simplicidade: Dada a dimensão do projeto e a integração com um único banco Oracle, uma arquitetura monolítica reduz a complexidade no desenvolvimento, implantação e testes.
+Coesão: Todos os módulos (Controllers, Serviços e Acesso a Dados) estão reunidos em um único deploy, facilitando a manutenção e a comunicação interna entre os componentes.
+Custo e Prazo: Em projetos com prazos e recursos mais limitados, a monolítica permite um desenvolvimento mais rápido e menos custoso em termos de infraestrutura.
+Diferenças em Relação à Abordagem Microservices:
+
+Microservices fragmentam a aplicação em serviços independentes, o que pode aumentar a complexidade na orquestração, comunicação (via APIs ou filas) e gerenciamento de deploys.
+Monolítica concentra toda a lógica em um único projeto, o que é ideal para sistemas menos distribuídos e com menor escalabilidade exigida inicialmente.
+
+2. Estrutura do Projeto
+
+A solução está organizada da seguinte forma:
+
+Controllers: Responsáveis pelos endpoints da API (ex.: PacienteController.cs).
+Models: Classes que representam os dados (ex.: Paciente.cs, Consulta.cs, etc.).
+Data: Camada de acesso a dados, onde utilizamos o Dapper para conectar ao Oracle e implementar o padrão Repository (ex.: PacienteRepository.cs, interface IPacienteRepository.cs e configurações em OracleSettings.cs).
+Singleton: Implementação de um gerenciador de configuração utilizando o padrão Singleton (ex.: ConfigManager.cs).
+Program.cs: Configuração da aplicação, injeção de dependências e ativação do Swagger.
